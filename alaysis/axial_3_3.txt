@@ -1,0 +1,9 @@
+% Model:              axial_3.mph
+% Version:            COMSOL 5.6.0.341
+% Date:               May 31 2021, 23:55
+% Dimension:          0
+% Nodes:              1
+% Expressions:        30
+% Description:        , Mag_ef, Est_ef1, Est_ef2, 
+% f @ phi2=15             sens2.iobj1/6435.9 @ phi2=15 sens2.iobj3/sens2.iobj1 @ phi2=15 sens2.iobj3/sens2.iobj2 @ phi2=15 phi2 @ phi2=15           f @ phi2=30              sens2.iobj1/6435.9 @ phi2=30 sens2.iobj3/sens2.iobj1 @ phi2=30 sens2.iobj3/sens2.iobj2 @ phi2=30 phi2 @ phi2=30           f @ phi2=45              sens2.iobj1/6435.9 @ phi2=45 sens2.iobj3/sens2.iobj1 @ phi2=45 sens2.iobj3/sens2.iobj2 @ phi2=45 phi2 @ phi2=45           f @ phi2=60              sens2.iobj1/6435.9 @ phi2=60 sens2.iobj3/sens2.iobj1 @ phi2=60 sens2.iobj3/sens2.iobj2 @ phi2=60 phi2 @ phi2=60           f @ phi2=75              sens2.iobj1/6435.9 @ phi2=75 sens2.iobj3/sens2.iobj1 @ phi2=75 sens2.iobj3/sens2.iobj2 @ phi2=75 phi2 @ phi2=75           f @ phi2=90              sens2.iobj1/6435.9 @ phi2=90 sens2.iobj3/sens2.iobj1 @ phi2=90 sens2.iobj3/sens2.iobj2 @ phi2=90 phi2 @ phi2=90
+1                         0.9864806174064161       0.7331983616686643       0.7851520705045868       0.2617993877991494       1                        0.9883111048801273       0.7665477493526054       0.8023662064323441       0.5235987755982988       1                        0.9891410397432163       0.7747928384818593       0.8084956718186203       0.7853981633974483       1                        0.9901198304461107       0.7762708696021455       0.8109813076831907       1.0471975511965976       1                        0.9910593130967021       0.7750587117201869       0.8120214566722769       1.3089969389957472       1                        0.9937368114548837       0.7663840870308481       0.8139728906695044       1.5707963267948966

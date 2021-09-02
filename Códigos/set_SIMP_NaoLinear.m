@@ -1,0 +1,1 @@
+model.component('comp1').physics('mfnc').feature('mfc2').set('mur', {'simp_nolinear(ur_var)'; '0'; '0'; '0'; 'simp_nolinear(ur_var)'; '0'; '0'; '0'; 'simp_nolinear(ur_var)'});

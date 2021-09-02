@@ -1,0 +1,9 @@
+% Model:              all.mph
+% Version:            COMSOL 5.6.0.341
+% Date:               May 31 2021, 23:51
+% Dimension:          0
+% Nodes:              1
+% Expressions:        35
+% Description:        , , , , , Mag_EF, Est_ef
+% r1 @ phi1=70            phi1 (deg) @ phi1=70     phi2 (deg) @ phi1=70     phi3 (deg) @ phi1=70     phi4 (deg) @ phi1=70     sens2.gobj1 @ phi1=70    sens2.gobj2 @ phi1=70    r1 @ phi1=67.5           phi1 (deg) @ phi1=67.5   phi2 (deg) @ phi1=67.5   phi3 (deg) @ phi1=67.5   phi4 (deg) @ phi1=67.5   sens2.gobj1 @ phi1=67.5  sens2.gobj2 @ phi1=67.5  r1 @ phi1=65             phi1 (deg) @ phi1=65     phi2 (deg) @ phi1=65     phi3 (deg) @ phi1=65     phi4 (deg) @ phi1=65     sens2.gobj1 @ phi1=65    sens2.gobj2 @ phi1=65    r1 @ phi1=62.5           phi1 (deg) @ phi1=62.5   phi2 (deg) @ phi1=62.5   phi3 (deg) @ phi1=62.5   phi4 (deg) @ phi1=62.5   sens2.gobj1 @ phi1=62.5  sens2.gobj2 @ phi1=62.5  r1 @ phi1=60             phi1 (deg) @ phi1=60     phi2 (deg) @ phi1=60     phi3 (deg) @ phi1=60     phi4 (deg) @ phi1=60     sens2.gobj1 @ phi1=60    sens2.gobj2 @ phi1=60
+0.12                      70                       70                       70                       23.657611205293232       0.9814941297982535       0.8622144979886879       0.12                     67.5                     67.5                     67.5                     33.42234296361496        0.9794528167543421       0.8588767157350321       0.12                     65                       65                       65                       40.99529283787017        0.9824833649389237       0.8675923988532791       0.12                     62.50000000000001        62.50000000000001        62.50000000000001        47.429041798662325       0.9832292916032057       0.872242955892004        0.12                     59.99999999999999        59.99999999999999        59.99999999999999        53.13010235415599        0.9830116440605852       0.8770427455955612

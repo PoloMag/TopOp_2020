@@ -1,0 +1,9 @@
+% Model:              axial_3.mph
+% Version:            COMSOL 5.6.0.341
+% Date:               May 31 2021, 23:54
+% Dimension:          0
+% Nodes:              1
+% Expressions:        25
+% Description:        , Mag_ef, Est_ef1, Est_ef2, acos((Gap_area/(h_gap/2)-w_mag*(f-2)/f)/(2*(w_mag/f)))
+% f @ f=2.5               sens2.iobj1/6435.9 @ f=2.5 sens2.iobj3/sens2.iobj1 @ f=2.5 sens2.iobj3/sens2.iobj2 @ f=2.5 phi1 (deg) @ f=2.5       f @ f=3                  sens2.iobj1/6435.9 @ f=3 sens2.iobj3/sens2.iobj1 @ f=3 sens2.iobj3/sens2.iobj2 @ f=3 phi1 (deg) @ f=3         f @ f=3.5                sens2.iobj1/6435.9 @ f=3.5 sens2.iobj3/sens2.iobj1 @ f=3.5 sens2.iobj3/sens2.iobj2 @ f=3.5 phi1 (deg) @ f=3.5       f @ f=4                  sens2.iobj1/6435.9 @ f=4 sens2.iobj3/sens2.iobj1 @ f=4 sens2.iobj3/sens2.iobj2 @ f=4 phi1 (deg) @ f=4         f @ f=2                  sens2.iobj1/6435.9 @ f=2 sens2.iobj3/sens2.iobj1 @ f=2 sens2.iobj3/sens2.iobj2 @ f=2 phi1 (deg) @ f=2
+2.5                       0.9801908726945406       0.8550726986291698       0.9003418145895578       63.23604616273494        3                        0.980624463500344        0.8517290628023565       0.8988628243635017       70.10002834941079        3.5                      0.9811820556359392       0.8474458311960548       0.8964776308937679       76.6768888268578         4                        0.9821425747175421       0.8445502275765036       0.8976671964816701       83.07872577249103        2                        0.9789101942940951       0.8687541300509295       0.9109166697910077       55.92672295548227

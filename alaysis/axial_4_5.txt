@@ -1,0 +1,9 @@
+% Model:              axial_4.mph
+% Version:            COMSOL 5.6.0.341
+% Date:               Jun 16 2021, 17:55
+% Dimension:          0
+% Nodes:              1
+% Expressions:        18
+% Description:        Est_ef, Mag_ef, 
+% opt.gobj1 @ y1=30       opt.gobj2 @ y1=30        y1 (mm) @ y1=30          opt.gobj1 @ y1=50        opt.gobj2 @ y1=50        y1 (mm) @ y1=50          opt.gobj1 @ y1=75        opt.gobj2 @ y1=75        y1 (mm) @ y1=75          opt.gobj1 @ y1=100       opt.gobj2 @ y1=100       y1 (mm) @ y1=100         opt.gobj1 @ y1=150       opt.gobj2 @ y1=150       y1 (mm) @ y1=150         opt.gobj1 @ y1=200       opt.gobj2 @ y1=200       y1 (mm) @ y1=200
+0.8556886349260193        0.9904681167008881       30                       0.7915187144388366       0.9948331170657208       50                       0.7526842079714637       0.9970840889302555       75                       0.7260547171411879       0.9978509823107855       100                      0.6904588394864795       0.9981232360463953       150                      0.6671389825800377       0.9979395244755793       200
