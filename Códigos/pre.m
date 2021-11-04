@@ -1,7 +1,3 @@
-n_blocks = 0; %numero de blocos, de forma a criar blocos com parâmetros de alocação a serem utilizados. Método em conjunto com método da densidade não se mostra muito bom. Cria 3 variáveis por bloco.
-n_vars_densidade = 3; %numero de variáveis do método da densidade. Se =0, não é feita otimização de nenhum material. Se igual a 1, tem-se como padrão o ferro, e se igual a 3 tem-se como padrão ferro e ímã (com módulo e ângulo). Se maior que 2, deve ser feito manualmente.
-n_vars_global = 1; %numero de parâmetros a serem otimizados. 
-n_constraints = 2;
 %n_integral_objectives = 2; %numero de integrações em diferentes regiões feita para 
 
 

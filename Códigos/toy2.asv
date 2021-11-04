@@ -43,20 +43,18 @@ for i=1:n_constraints
     model.study('std3').feature('sens').set('objectiveActive', cell_obj_func); 
     model.sol('sol3').run();
     
-    gobj = 'sens2.gconst%d';
-    gobj = sprintf(gobj,i);
+    gobj = 'sens2.gobj%d';
+    gobj = sprintf(gobj,i+1);
     f_constraint = (mpheval(model,gobj,'dataonly','on','dataset','dset3'));
     fval(i) = f_constraint(1);
     
     sens_c1 = mphgetu(model,'Type','Fsens','soltag','sol3');
     
-    dfdx(i,:) =sens_c1(~isnan(sens_c1))';
+    dfdx(i) =sens_c1(~isnan(sens_c1))';
     
     cell_obj_func{i} = 'off';
 end
 
-cell_obj_func{cell_obj_func_size} = 'on'; 
-model.study('std3').feature('sens').set('objectiveActive', cell_obj_func); 
 
 
 %OBS: A função mpheval retorna um vetor com tamanho do vetor de variáveis

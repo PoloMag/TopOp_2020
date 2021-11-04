@@ -1,1 +1,1 @@
-model.component('comp1').physics('mfnc').feature('mfc2').set('mur', {'simp_linear(ur_var)'; '0'; '0'; '0'; 'simp_linear(ur_var)'; '0'; '0'; '0'; 'simp_linear(ur_var)'});
+model.component('comp1').func('an7').set('expr', 'simp_linear(p)');

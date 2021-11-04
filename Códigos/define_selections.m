@@ -54,10 +54,15 @@ model.component('comp1').cpl('intop3').set('opname', 'ext');
 model.component('comp1').cpl('intop3').selection.named('ext');
 model.component('comp1').cpl('intop3').label('Integration EXT');
 
+model.component('comp1').cpl.create('intop6', 'Integration');
+model.component('comp1').cpl('intop6').set('opname', 'design');
+model.component('comp1').cpl('intop6').selection.named('design');
+model.component('comp1').cpl('intop6').label('Integration Design Region');
+
 
 model.component('comp1').cpl.create('aveop1', 'Average');
 model.component('comp1').cpl('aveop1').set('opname', 'Av_gap');
-model.component('comp1').cpl('aveop1').selection.named('gap');
+model.component('comp1').cpl('aveop1').selection.named('gap_high');
 model.component('comp1').cpl('aveop1').label('Av_gap');
 
 

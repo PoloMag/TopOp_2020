@@ -17,15 +17,23 @@ obj = (mpheval(model,'sens2.gobj1','dataonly','on','dataset','dset2'));
 f0val = (obj(1));
 
 %Função(ões) de restrição.
-fval = zeros(n_constraints,1);
-for i=1:n_constraints
-    gobj = 'sens2.gconst%d';
+f_constraint = [];
+for i=2:n_constraints+1
+    gobj = 'sens2.gobj%d';
     gobj = sprintf(gobj,i);
-    f_constraint = (mpheval(model,gobj,'dataonly','on','dataset','dset2'));
-    fval(i) = f_constraint(1);
+    f_constraint = [f_constraint, (mpheval(model,gobj,'dataonly','on','dataset','dset2'))];
 end
 
+f_constraint = [];
+for i=2:n_constraints+1
+    gobj = 'sens2.gobj%d';
+    gobj = sprintf(gobj,i);
+    f_constraint = [f_constraint,gobj];
+end
 
+f_constraint = [(mpheval(model,'sens2.gobj2','dataonly','on','dataset','dset2'))];
+
+fval = [f_constraint(1)];
 
 %OBS: A função mpheval retorna um vetor com tamanho do vetor de variáveis
 %do sistema, porém com o valor da função especificada. Por isso utiliza-se

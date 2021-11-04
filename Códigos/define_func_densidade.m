@@ -4,8 +4,10 @@ model.component('comp1').func.create('an1', 'Analytic');
 model.component('comp1').func.create('an2', 'Analytic');
 model.component('comp1').func.create('an3', 'Analytic');
 model.component('comp1').func.create('an6', 'Analytic');
+model.component('comp1').func.create('an7', 'Analytic');
 model.component('comp1').func.create('int1', 'Interpolation');
 model.component('comp1').func.create('an5', 'Analytic');
+model.component('comp1').func.create('max', 'Analytic');
 %Função degrau de Heaviside suavizada
 model.component('comp1').func('an1').label('Heaviside Projection 1');
 model.component('comp1').func('an1').set('funcname', 'projection1');
@@ -18,12 +20,12 @@ model.component('comp1').func('an2').set('funcname', 'simp_linear');
 model.component('comp1').func('an2').set('expr', '1+(ur_ferro-1)*(p^psimp)');
 model.component('comp1').func('an2').set('args', {'p'});
 model.component('comp1').func('an2').set('plotargs', {'p' '0' '1'});
-%Função SIMP para modelo de aço linear
-model.component('comp1').func('an2').label('Double_SIMP');
-model.component('comp1').func('an2').set('funcname', 'Double_simp');
-model.component('comp1').func('an2').set('expr', '(x^psimp)*((1-y)^psimp)');
-model.component('comp1').func('an2').set('args', {'x' 'y'});
-model.component('comp1').func('an2').set('plotargs', {'x' '0' '1'; 'y' '0' '1'});
+%Função double SIMP
+model.component('comp1').func('an6').label('Double_SIMP');
+model.component('comp1').func('an6').set('funcname', 'Double_simp');
+model.component('comp1').func('an6').set('expr', '(x^psimp)*((1-y)^psimp)');
+model.component('comp1').func('an6').set('args', {'x' 'y'});
+model.component('comp1').func('an6').set('plotargs', {'x' '0' '1'; 'y' '0' '1'});
 %Função SIMP para modelo de aço não linear
 model.component('comp1').func('an3').label('SIMP_nolinear');
 model.component('comp1').func('an3').set('funcname', 'SIMP_nolinear');
@@ -32,6 +34,12 @@ model.component('comp1').func('an3').set('args', {'p' 'H'});
 model.component('comp1').func('an3').set('argunit', '1,A/m');
 model.component('comp1').func('an3').set('fununit', '1');
 model.component('comp1').func('an3').set('plotargs', {'p' '0' '1'; 'H' '0' '316803.620'});
+%Função SIMP a ser utilizada
+model.component('comp1').func('an7').label('SIMP');
+model.component('comp1').func('an7').set('funcname', 'simp');
+model.component('comp1').func('an7').set('expr', 'simp_linear(p)');
+model.component('comp1').func('an7').set('args', {'p' 'H'});
+model.component('comp1').func('an7').set('plotargs', {'p' '0' '1'});
 %Curva BH do aço não linear: Feita a partir da interpolação dos pontos
 %passados pela Bakker Magnetics
 model.component('comp1').func('int1').set('funcname', 'BH_Bakker');
@@ -80,3 +88,10 @@ model.component('comp1').func('int1').set('defineprimfun', true);
 model.component('comp1').func('an5').set('expr', 'int1(x)/(x*mu0_const)');
 model.component('comp1').func('an5').set('argunit', 'A/m');
 model.component('comp1').func('an5').set('plotargs', {'x' '0' '316803.620'});
+
+%Max function
+model.component('comp1').func('max').set('expr', '0.5*(x+y+abs(x-y))');
+model.component('comp1').func('max').label('Continuos max');
+model.component('comp1').func('max').set('funcname', 'Max');
+model.component('comp1').func('max').set('args', {'x' 'y'});
+model.component('comp1').func('max').set('plotargs', {'x' '-1' '1'; 'y' '0' '1'});

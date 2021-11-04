@@ -112,7 +112,7 @@ while ((kktnorm > kkttol)||outit<minoutit) && outit < maxoutit
   
   %trocar pg5 por tag da visualização que tu quer
   if live_plot
-      mphplot(model,'pg1')
+      mphplot(model,'pg5')
       set(gcf,'Visible','on')
   end
   

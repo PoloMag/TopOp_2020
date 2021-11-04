@@ -1,6 +1,6 @@
 n_blocks = 0; %numero de blocos, de forma a criar blocos com parâmetros de alocação a serem utilizados. Método em conjunto com método da densidade não se mostra muito bom. Cria 3 variáveis por bloco.
 n_vars_densidade = 3; %numero de variáveis do método da densidade. Se =0, não é feita otimização de nenhum material. Se igual a 1, tem-se como padrão o ferro, e se igual a 3 tem-se como padrão ferro e ímã (com módulo e ângulo). Se maior que 2, deve ser feito manualmente.
-n_vars_global = 0; %numero de parâmetros a serem otimizados. 
+n_vars_global = 1; %numero de parâmetros a serem otimizados. 
 n_constraints = 2;
 %n_integral_objectives = 2; %numero de integrações em diferentes regiões feita para 
 
@@ -13,12 +13,12 @@ model.param.set('pb', '0.5','Centro do degrau de Heaviside');
 model.param.set('psimp', '3','Parâmetro s da função SIMP');
 model.param.set('B_rem', '1.41', 'Remanência dos ímãs utilizados');
 model.param.set('mu_rec', '1.05','Permeabilidade de recuo dos ímãs utilizados');
-model.param.set('Brem_virt', '1', 'Remanência do ímã virtual');
+
 
 for i=1:n_constraints
     
-    const_tag_g = ['gconst' num2str(i)];
-    model.param.set('Const_' num2str(i), '0.5','Variável de restriçao 1 ( g(p)<=Const_1 )');
+    const_tag = ['Const_' num2str(i)];
+    model.param.set(const_tag, '0.5','Restriçao i ( g_i(p)<=Const_i )');
 end
 
 %Cria componente 2D

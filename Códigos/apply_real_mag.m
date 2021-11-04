@@ -1,5 +1,5 @@
-model.component('comp1').physics('mfnc').feature('mfc3').active(false); %desativa física do ima virtual
-model.component('comp1').physics('mfnc').feature('mfc4').active(true); %ativa física do ímã real
+model.component('comp1').physics('mfnc').feature('virtmag').active(false); %desativa física do ima virtual
+model.component('comp1').physics('mfnc').feature('mfc3').active(true); %ativa física do ímã real
 
 %Se forem adicionadas físicas novas para o ímã (caso haja remanências
 %diferentes, em ângulo ou módulo) pode-se adicioná-las aqui. Checar a tag
